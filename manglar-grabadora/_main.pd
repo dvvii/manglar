@@ -1,0 +1,3 @@
+#N canvas 66 82 1111 897 12;
+#X obj 12 10 InOut;
+#X obj 54 10 sampler;

@@ -1,0 +1,12 @@
+#N canvas 386 52 787 897 12;
+#X obj 211 173 loadbang;
+#X msg 211 202 out 17;
+#X obj 211 231 s bela_setDigital;
+#X obj 337 183 metro 1000;
+#X obj 337 207 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 337 231 s bela_digitalOut17;
+#X connect 0 0 1 0;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
