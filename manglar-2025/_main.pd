@@ -1,4 +1,4 @@
-#N canvas -4 75 686 903 10;
+#N canvas -4 75 686 847 10;
 #X obj 19 43 s~ channel1;
 #X obj 91 43 s~ channel2;
 #X obj 19 282 r~ channel1;
@@ -42,7 +42,7 @@
 #X obj 701 125 sig~;
 #X obj 701 146 s~ volume;
 #X obj 220 324 +~, f 17;
-#N canvas 611 286 819 549 pepper 1;
+#N canvas 611 286 819 549 pepper 0;
 #X obj 106 99 dac~ 27 28;
 #X obj 1 8 r~ channel1;
 #X obj 75 8 r~ channel2;
@@ -76,6 +76,12 @@
 #X obj 45 175 *~ 2;
 #X obj 29 208 -~ -0.5;
 #X obj 91 167 -~ -0.5;
+#X obj 437 180 s bela_setDht;
+#X obj 437 128 loadbang;
+#X obj 437 214 r bela_dht;
+#X obj 437 237 print DHT11;
+#X text 464 152 Bela Digital Channel for sensor;
+#X msg 437 152 6;
 #X connect 2 0 3 0;
 #X connect 3 0 22 0;
 #X connect 4 0 5 0;
@@ -107,3 +113,6 @@
 #X connect 52 0 54 0;
 #X connect 53 0 10 0;
 #X connect 54 0 11 0;
+#X connect 56 0 60 0;
+#X connect 57 0 58 0;
+#X connect 60 0 55 0;
