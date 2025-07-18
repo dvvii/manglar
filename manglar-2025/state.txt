@@ -1,0 +1,2 @@
+timbre 1;
+gain 1;
